@@ -32,11 +32,11 @@
     <div class="bg-gray-900 pt-20 text-gray-300 h-screen relative">
         <div class="mx-auto container flex sm:flex-col lg:flex-row justify-between items-start lg:transform lg:translate-y-1/2">
             <!-- Tagline Section -->
-            <div class="lg:w-1/3 sm:w-full pt-20 sm:order-2 lg:order-1">
-                <h1 class="text-5xl uppercase">Your <span class="font-bold">Dream</span><br> We <span
+            <div class="lg:w-1/3 sm:inline-block sm:mx-auto  pt-20 sm:order-2 lg:order-1 ">
+                <h1 id="main-btn" class="text-5xl uppercase">Your <span class="font-bold">Dream</span><br> We <span
                         class="font-bold">Create</span>.</h1>
-                <a href="#!" class="ml-2 inline-block px-4 py-2 pr-14 my-4 bg-blue-600 uppercase font-bold relative">
-                    <span>Contact Us</span>
+                <a href="#!" class="ml-2 inline-block px-8 py-4 pr-14 my-4 bg-blue-600 rounded-sm text-xs focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 uppercase font-bold relative" id="main-btn">
+                    <span id="">Contact Us</span>
                     <span class="absolute right-3 top-1/2 transform -translate-y-1/2">
                         <svg class="h-8 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -95,121 +95,97 @@
         </div>
 
         <!-- Image Goes Here ... -->
-        <div class="bg-gray-800 w-full rounded-md bg-cover"
+        <div class="bg-gray-800 w-full rounded-md bg-cover" id="cover-img"
             style="background-image: url(../images/img-proj.png); height: 500px;"></div>
     </div>
-    <br><br><br><br>
-
-    <!-- Services We Provide Section ... -->
-    <div class="mx-auto container flex sm:flex-col lg:flex-row justify-between items-start">
-        <h2 class="text-4xl ml-20"><span class="uppercase text-5xl">Service</span> <br> <span class="text-3xl uppercase font-semibold">What we do</span></h2>
-
-        <!-- Services Pills...
-        <div class="lg:w-2/5 sm:w-full">
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Brand
-                and Visual Identity</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Wireframing
-                and user testing</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Prototyping</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Mobile
-                app and web design</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Brand
-                and Visual Identity</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Strategy
-                and design</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">User
-                Experience</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Ecommerce
-                & Shopify</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Design
-                System</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">CRM
-                and CMS web app</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">Website
-                development</span>
-            <span
-                class="inline-block px-4 md:py-2 sm:py-1 sm:text-xs border border-2 border-gray-500 rounded-full text-gray-500 mb-2 mr-3">App
-                development</span>
-        </div>
-    </div> -->
+    <br><br>
 
     <br><br>
 
     <!-- Services Section Goes Here... -->
     <div class="mx-auto container grid gap-4 gap-y-20 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2">
-        <div class="md:w-64 bg-white shadow-xl rounded-xl mx-auto pt-14 flex md:flex-col sm:flex-row sm:px-5 items-center justify-between sm:w-5/6">
-            <div class="bg-cover w-32 sm:w-20 sm:h-full mx-auto">
-                <img class="center" src="../images/web-programming 1.png" alt="">
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl">
+            <div class="md:w-64 sm:w-2/6">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="../images/database-storage 1.png" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
             </div>
-            <div class="sm:w-3/5">
-                <h3 class="text-xl sm:text-sm sm:font-bold sm:text-md uppercase font-semibold text-gray-600 text-center my-10 sm:my-0">Web Development</h3>
-                <a href="#!" class="inline-block uppercase text-xs text-gray-500 hover:underline">Hire Us</a>
+            <div class="md:hidden w-3/6">
+                <h3 class="text-2xl">Hello World</h3>
+                <hr class="mx-4 bg-gray-100 opacity-50 mb-5">
+                <p class="text-gray-600 mb-3">Lorem ipsum dolor sit,  ab minima, accusantium esse quia obcaecati dolor laudantium praesentium ducimus labore iste?</p>
+                <a href="#!" class="inline-block text-sm hover:underline p-2 text-red-500">Hire Us</a>
             </div>
         </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/database-storage 1.png" alt="">
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl">
+            <div class="md:w-64 sm:w-2/6">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="../images/vector 1.png" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
-        </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/vector 1.png" alt="">
+            <div class="md:hidden w-3/6">
+                <h3 class="text-2xl">Hello World</h3>
+                <hr class="mx-4 bg-gray-100 opacity-50 mb-5">
+                <p class="text-gray-600 mb-3">Lorem ipsum dolor sit,  ab minima, accusantium esse quia obcaecati dolor laudantium praesentium ducimus labore iste?</p>
+                <a href="#!" class="inline-block text-sm hover:underline p-2 text-red-500">Hire Us</a>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
         </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/mobile-app 2.png" alt="">
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl relative">
+            <div class="md:w-64 sm:w-2/6">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="../images/mobile-app 2.png" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
-        </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/seo 1.png" alt="">
+            <div class="md:hidden w-3/6">
+                <h3 class="text-2xl">Hello World</h3>
+                <hr class="mx-4 bg-gray-100 opacity-50 mb-5">
+                <p class="text-gray-600 mb-3">Lorem ipsum dolor sit,  ab minima, accusantium esse quia obcaecati dolor laudantium praesentium ducimus labore iste?</p>
+                <a href="#!" class="inline-block text-sm hover:underline p-2 text-red-500">Hire Us</a>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
+            <span class="absolute bg-green-500 text-white top-2 cursor-pointer inline-block px-3 py-2 right-0">20% OFF</span>
         </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/bullhorn 1.png" alt="">
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl">
+            <div class="md:w-64 sm:w-2/6">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="../images/target 1.png" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
-        </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/write 1.png" alt="">
+            <div class="md:hidden w-3/6">
+                <h3 class="text-2xl">Hello World</h3>
+                <hr class="mx-4 bg-gray-100 opacity-50 mb-5">
+                <p class="text-gray-600 mb-3">Lorem ipsum dolor sit,  ab minima, accusantium esse quia obcaecati dolor laudantium praesentium ducimus labore iste?</p>
+                <a href="#!" class="inline-block text-sm hover:underline p-2 text-red-500">Hire Us</a>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
         </div>
-        <div class="w-64 bg-white shadow-xl rounded-xl mx-auto pt-14">
-            <div class="bg-cover w-32 mx-auto">
-                <img class="center" src="../images/target 1.png" alt="">
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl">
+            <div class="md:w-64 sm:w-2/6">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="../images/write 1.png" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
             </div>
-            <h3 class="text-xl uppercase font-semibold text-gray-600 text-center my-10">Web Development</h3>
+            <div class="md:hidden w-3/6">
+                <h3 class="text-2xl">Hello World</h3>
+                <hr class="mx-4 bg-gray-100 opacity-50 mb-5">
+                <p class="text-gray-600 mb-3">Lorem ipsum dolor sit,  ab minima, accusantium esse quia obcaecati dolor laudantium praesentium ducimus labore iste?</p>
+                <a href="#!" class="inline-block text-sm hover:underline p-2 text-red-500">Hire Us</a>
+            </div>
         </div>
-
+    
 
     </div>
     <br><br><br><br><br><br><br>
 
 
     <!-- Our Tech Stack :: Image -->
-    <div class="mx-cover container">
+    <div class="mx-auto container">
         <h2 class="text-center uppercase text-5xl text-gray-600 mb-4">Our Tech Stack Includes</h2>
-        <div class="w-full h-96 bg-no-repeat bg-cover bg-center"
-            style="background-image: url(../images/tech-stack.png);">
+        <div class="h-96 bg-no-repeat bg-cover bg-center flex justify-center items-center">
+            <img src="../images/tech-stack.png" alt="">
         </div>
     </div>
     <br><br><br><br>
@@ -219,10 +195,12 @@
     <!-- Slider Section ... -->
     <div id="splide" class="splide lg:w-3/4 mx-auto">
         <div class="splide__track">
+
+            <!-- NOTE: Slides are here... -->
             <ul class="splide__list">
                 <li class="splide__slide">
                     <!-- First Slide. -->
-                    <div class="flex sm:flex-col md:flex-row justify-around bg-blue-700 rounded-md md:p-20 sm:p-10 md:mx-5 sm:mx-1 sm:w-full"
+                    <div class="flex sm:flex-col md:flex-row justify-around bg-blue-700 rounded-md md:p-20 sm:p-10 md:mx-5 sm:w-full"
                         style="background: linear-gradient(#030303, #001252);">
                         <!-- Image & Name -->
                         <div class="lg:w-1/3 sm:w-full flex flex-col items-center justify-center">
@@ -370,7 +348,7 @@
 
     <!-- Contact Form Goes Here... -->
     <div class="mx-auto bg-white shadow-2xl py-10 pt-20 relative -mb-32 md:w-3/4 sm:w-full" style="">
-        <form action="" method="post" class="md:mx-20 sm:mx-5 bg-white">
+        <form action="" method="post" class="md:mx-20 sm:mx-10 bg-white">
             <div class="mb-10">
                 <!-- Wierdo Content Goes Here. -->
                 <p class="uppercase text-gray-600">Say Hello 👋</p>
@@ -463,6 +441,36 @@
             },
         }).mount();
     </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
+        #cover-img{
+            position: relative;
+        }
+        #cover-img::after{
+            /* content: 'Visit Project'; */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Lobster', cursive;
+            text-decoration: underline;
+            color: white;
+            font-weight: 100;
+            font-size: 3rem
+        }
+        #cover-img:hover::after{
+            content: 'Visit Project';
+            background-color: #0000007a;
+            cursor: pointer;
+        }
+        #main-btn{
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+    </style>
 </body>
 
 </html>

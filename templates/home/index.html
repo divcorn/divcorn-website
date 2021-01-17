@@ -1,10 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tailwind.css' %}">
+    <!-- <link href="../tailwind.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Divcorn</title>
@@ -34,7 +36,7 @@
                         <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                         </svg>
-                        <span id="phone-no">935-408-5897</span>
+                        <span id="phone-no">91-9205442860</span>
                     </a>
                 </ul>
                 <div>
@@ -65,7 +67,7 @@
                 <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <span id="phone-no" class="">935-408-5897</span>
+                <span id="phone-no" class="">91-9205442860</span>
             </a>
         </ul>
     </div>
@@ -150,70 +152,72 @@
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col p-4 h-full mx-auto">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo.png" alt="">
+                                        <!-- <img src="{% static 'images/logo.png' %}" alt=""> -->
+                                        <img src="{% static 'images/roll.png' %}" alt="My image">
+
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">WordPress</p>
+                                        <!-- <p id="tech-stack-text">roll</p> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col p-4 py-2 mx-auto h-full">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo(1).png" alt="">
+                                        <img src="{% static 'images/celsius_logo.svg' %}" alt="">
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">Django</p>
+                                        <!-- <p id="tech-stack-text">celsius</p> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col p-4 mx-auto h-full">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo(2).png" alt="">
+                                        <img src="{% static 'images/fliptix_logo.svg' %}" alt="">
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">Python</p>
+                                        <!-- <p id="tech-stack-text">Fliptix</p> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col p-4 mx-auto h-full">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo(3).png" alt="">
+                                        <img src="{% static 'images/pl.png' %}" alt="">
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">VueJS</p>
+                                        <!-- <p id="tech-stack-text">pl</p> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col p-4 mx-auto h-full">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo(4).png" alt="">
+                                        <img src="{% static 'images/company(1).png' %}" alt="">
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">PostgreSQL</p>
+                                        <!-- <p id="tech-stack-text">trizone</p> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col p-4 mx-auto h-full">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo(5).png" alt="">
+                                        <img src="{% static 'images/company(2).png' %}" alt="">
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">MongoDb</p>
+                                        <!-- <p id="tech-stack-text">tinder</p> -->
                                     </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class=" w-32 bg-blue-700 flex justify-center items-center flex-col px-4 mx-auto h-full">
                                     <div class="bg-cover w-16">
-                                        <img src="../images/logo(6).png" alt="">
+                                        <img src="{% static 'images/company(3).png' %}" alt="">
                                     </div>
                                     <div class="mt-2">
-                                        <p id="tech-stack-text">Docker</p>
+                                        <!-- <p id="tech-stack-text">alysia</p> -->
                                     </div>
                                 </div>
                             </li>
@@ -271,21 +275,21 @@
         <div class="rounded-lg w-4/5 overflow-hidden shadow-xl mx-auto">
             <!-- Client's Company's Logo -->
             <div class="p-4 bg-purple-300">
-                <img class="w-20 mx-auto" src="../images/company.png" alt="">
+                <img class="w-20 mx-auto" src="{% static 'images/roll.png' %}" alt="">
             </div>
 
             <!-- Content Section -->
             <div class="p-4">
-                <h2 class="text-blue-900" id="company-name">Company's Name</h2>
+                <h2 class="text-blue-900" id="company-name">Roll</h2>
                 <!-- What we've done. -->
                 <p class="text-center text-gray-500 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti temporibus soluta dolor nisi.</p>
 
                 <a href="#!" class="flex justify-center uppercase text-green-800 hover:text-green-400 hover:underline text-lg">Read The Case Study</a>
                 <div>
                     <span class="inline-block mx-auto flex justify-center items-center">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(3).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(4).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo.png" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(3).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(4).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo.png' %}" alt="">
                     </span>
                 </div>
             </div>
@@ -294,21 +298,21 @@
         <div class="rounded-lg w-4/5 overflow-hidden shadow-xl mx-auto">
             <!-- Client's Company's Logo -->
             <div class="p-4 bg-yellow-300">
-                <img class="w-20 mx-auto" src="../images/company(1).png" alt="">
+                <img class="w-20 mx-auto" src="{% static 'images/company(3).png' %}" alt="">
             </div>
 
             <!-- Content Section -->
             <div class="p-4">
-                <h2 class="text-blue-900" id="company-name">Company's Name</h2>
+                <h2 class="text-blue-900" id="company-name">ALYSIA</h2>
                 <!-- What we've done. -->
                 <p class="text-center text-gray-500 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti temporibus soluta dolor nisi.</p>
 
                 <a href="#!" class="flex justify-center uppercase text-green-800 hover:text-green-400 hover:underline text-lg">Read The Case Study</a>
                 <div>
                     <span class="inline-block mx-auto flex justify-center items-center">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(1).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(2).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(5).png" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(1).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(2).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(5).png' %}" alt="">
                     </span>
                 </div>
             </div>
@@ -317,21 +321,21 @@
         <div class="rounded-lg w-4/5 overflow-hidden shadow-xl mx-auto">
             <!-- Client's Company's Logo -->
             <div class="p-4 bg-purple-300">
-                <img class="w-20 mx-auto" src="../images/company.png" alt="">
+                <img class="w-20 mx-auto" src="{% static 'images/company(4).png' %}" alt="">
             </div>
 
             <!-- Content Section -->
             <div class="p-4">
-                <h2 class="text-blue-900" id="company-name">Company's Name</h2>
+                <h2 class="text-blue-900" id="company-name">LONELY PLANET</h2>
                 <!-- What we've done. -->
                 <p class="text-center text-gray-500 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti temporibus soluta dolor nisi.</p>
 
                 <a href="#!" class="flex justify-center uppercase text-green-800 hover:text-green-400 hover:underline text-lg">Read The Case Study</a>
                 <div>
                     <span class="inline-block mx-auto flex justify-center items-center">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(3).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(4).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo.png" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(3).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(4).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo.png' %}" alt="">
                     </span>
                 </div>
             </div>
@@ -340,21 +344,21 @@
         <div class="rounded-lg w-4/5 overflow-hidden shadow-xl mx-auto">
             <!-- Client's Company's Logo -->
             <div class="p-4 bg-yellow-300">
-                <img class="w-20 mx-auto" src="../images/company(1).png" alt="">
+                <img class="w-20 mx-auto" src="{% static 'images/company(5).png' %}" alt="">
             </div>
 
             <!-- Content Section -->
             <div class="p-4">
-                <h2 class="text-blue-900" id="company-name">Company's Name</h2>
+                <h2 class="text-blue-900" id="company-name">SPORTER</h2>
                 <!-- What we've done. -->
                 <p class="text-center text-gray-500 my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deleniti temporibus soluta dolor nisi.</p>
 
                 <a href="#!" class="flex justify-center uppercase text-green-800 hover:text-green-400 hover:underline text-lg">Read The Case Study</a>
                 <div>
                     <span class="inline-block mx-auto flex justify-center items-center">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(1).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(2).png" alt="">
-                        <img class="w-8 my-3 mx-2" src="../images/logo(5).png" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(1).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(2).png' %}" alt="">
+                        <img class="w-8 my-3 mx-2" src="{% static 'images/logo(5).png' %}" alt="">
                     </span>
                 </div>
             </div>
@@ -383,51 +387,69 @@
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-center group hover:shadow-xl hover:bg-blue-600 hover:cursor-pointer">
             <div class="md:w-64 sm:w-11/12 relative z-20">
                 <div class="bg-cover w-32 mx-auto mb-5">
-                    <img class="center" src="../images/database-storage 1.png" alt="">
+                    <img class="center" src="{% static 'images/frontend_dev.png' %}" alt="">
                 </div>
-                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Frontend Development</h3>
             </div>
         </div>
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl">
             <div class="md:w-64 sm:w-11/12">
                 <div class="bg-cover w-32 mx-auto mb-5">
-                    <img class="center" src="../images/vector 1.png" alt="">
+                    <img class="center" src="{% static 'images/backend_dev.png' %}" alt="">
                 </div>
-                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Backend Development</h3>
             </div>
         </div>
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl relative">
             <div class="md:w-64 sm:w-11/12">
                 <div class="bg-cover w-32 mx-auto mb-5">
-                    <img class="center" src="../images/mobile-app 2.png" alt="">
+                    <img class="center" src="{% static 'images/mobile_dev.png' %}" alt="">
                 </div>
-                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Mobile Apllication</h3>
             </div>
             <span class="absolute bg-green-500 text-white top-2 cursor-pointer inline-block px-3 py-2 right-0">20% OFF</span>
         </div>
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-around group hover:shadow-xl">
             <div class="md:w-64 sm:w-11/12">
                 <div class="bg-cover w-32 mx-auto mb-5">
-                    <img class="center" src="../images/target 1.png" alt="">
+                    <img class="center" src="{% static 'images/UI_UX.png' %}" alt="">
                 </div>
-                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">UI/UX</h3>
             </div>
         </div>
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 group hover:shadow-xl">
             <div class="md:w-64 sm:w-11/12">
                 <div class="bg-cover w-32 mx-auto mb-5">
-                    <img class="center" src="../images/write 1.png" alt="">
+                    <img class="center" src="{% static 'images/social_media.png' %}" alt="">
                 </div>
-                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Social Media</h3>
             </div>
         </div>
 
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 group hover:shadow-xl">
             <div class="md:w-64 sm:w-11/12">
                 <div class="bg-cover w-32 mx-auto mb-5">
-                    <img class="center" src="../images/mobile-app 2.png" alt="">
+                    <img class="center" src="{% static 'images/digi_startegy.png' %}" alt="">
                 </div>
-                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Web Development</h3>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Digital Strategy</h3>
+            </div>
+        </div>
+
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 group hover:shadow-xl">
+            <div class="md:w-64 sm:w-11/12">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="{% static 'images/seo.png' %}" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Seo Services</h3>
+            </div>
+        </div>
+
+        <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 group hover:shadow-xl">
+            <div class="md:w-64 sm:w-11/12">
+                <div class="bg-cover w-32 mx-auto mb-5">
+                    <img class="center" src="{% static 'images/content_writing.png' %}" alt="">
+                </div>
+                <h3 class="text-xl uppercase font-semibold text-gray-600 text-center">Content Writing</h3>
             </div>
         </div>
     
@@ -454,7 +476,7 @@
                         <!-- Image & Name -->
                         <div class="lg:w-1/3 sm:w-full flex flex-col items-center justify-center">
                             <div class="bg-cover">
-                                <img class="rounded-full" src="../images/Ellipse 17.png" alt="">
+                                <img class="rounded-full" src="{% static 'images/client_moolchand.png' %}" alt="">
                             </div>
                             <h2 class="text-8xl text-gray-200 mt-4">4.9</h2>
                             <div class="flex">
@@ -491,7 +513,7 @@
                                 with these felt like an
                                 extension of my in-house
                                 team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Deep Mehta, Divcorn</p>
+                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Moolchand Sharma, Haryana Gov.</p>
                         </div>
                     </div>
                 </li>
@@ -501,7 +523,7 @@
                         <!-- Image & Name -->
                         <div class="lg:w-1/3 sm:w-full flex flex-col items-center justify-center">
                             <div class="bg-cover">
-                                <img class="rounded-full" src="../images/Ellipse 17.png" alt="">
+                                <img class="rounded-full" src="{% static 'images/client_sridutt.png' %}" alt="">
                             </div>
                             <h2 class="text-8xl text-gray-200 mt-4">4.9</h2>
                             <div class="flex">
@@ -538,7 +560,7 @@
                                 with these felt like an
                                 extension of my in-house
                                 team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Deep Mehta, Divcorn</p>
+                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Sridutt Sharma, Aam Aadmi Party</p>
                         </div>
                     </div>
                 </li>
@@ -548,7 +570,7 @@
                         <!-- Image & Name -->
                         <div class="lg:w-1/3 sm:w-full flex flex-col items-center justify-center">
                             <div class="bg-cover">
-                                <img class="rounded-full" src="../images/Ellipse 17.png" alt="">
+                                <img class="rounded-full" src="{% static 'images/client_bhisham.png' %}" alt="">
                             </div>
                             <h2 class="text-8xl text-gray-200 mt-4">4.9</h2>
                             <div class="flex">
@@ -585,7 +607,55 @@
                                 with these felt like an
                                 extension of my in-house
                                 team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Deep Mehta, Divcorn</p>
+                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Bhisham Sharma, Congress</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="splide__slide w-full">
+                    <div class="flex sm:flex-col md:flex-row justify-around bg-blue-700 rounded-md  md:p-20 sm:p-10 md:mx-5 sm:mx-1"
+                        style="background: linear-gradient(#030303, #001252);">
+                        <!-- Image & Name -->
+                        <div class="lg:w-1/3 sm:w-full flex flex-col items-center justify-center">
+                            <div class="bg-cover">
+                                <img class="rounded-full"  src="{% static 'images/client_alok.png' %}" alt="">
+                            </div>
+                            <h2 class="text-8xl text-gray-200 mt-4">4.9</h2>
+                            <div class="flex">
+                                <svg class="fill-current text-yellow-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="fill-current text-yellow-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="fill-current text-yellow-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="fill-current text-yellow-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                <svg class="fill-current text-yellow-500 w-10 h-10" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="lg:w-1/3 sm:w-full sm:pt-10 text-center">
+                            <h3 class="text-white text-3xl  sm:text-xl">They prefectly met my
+                                expectations - working
+                                with these felt like an
+                                extension of my in-house
+                                team.</h3>
+                            <p class="text-gray-400 md:mt-20 sm:mt-5">- Aalok Pande, CEO at Advance Academic</p>
                         </div>
                     </div>
                 </li>
@@ -643,7 +713,7 @@
         <div class="grid grid-gap-10 md:grid-cols-2 sm:grid-cols-1 gap-y-20 lg:grid-cols-4 container mx-auto text-white">
             <div class="w-64 mx-auto">
                 <p class="font-semibold uppercase mb-4">Divcorn Consultancy</p>
-                <p>Agency specialising in Couslting <br> marketing, Desing and mangment.</p>
+                <p>Agency specialising in Development, Desing  <br> Marketing and Couslting</p>
             </div>
             <div class="w-64 mx-auto">
                 <p class="font-semibold uppercase mb-4">Contact</p>
@@ -654,7 +724,7 @@
 
                 <p>Call to us</p>
                 <a href="#!" class="inline-block py-1 mb-2 mb border-b-2 border-gray-800"><i
-                        class="fas fa-mobile-alt text-xl mr-2"></i>+91 XXX XXX XXXX</a>
+                        class="fas fa-mobile-alt text-xl mr-2"></i>+91 9205442860</a>
             </div>
             <div class="w-64 mx-auto">
                 <p class="font-semibold uppercase mb-4">Office</p>

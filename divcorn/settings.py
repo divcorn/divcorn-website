@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+
+#Host: _domainconnect
+#PointsTo: _domainconnect.gd.domaincontrol.com
 import os
 from pathlib import Path
 
@@ -25,7 +28,7 @@ SECRET_KEY = '3xk-^&p9km9kxzlf#di6v+h2xuhq(tyz_l$wodbe&1gtrj@$+^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["divcorn.azurewebsites.net", "divcorn.com", "*"]
 
 
 # Application definition

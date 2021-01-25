@@ -1,0 +1,376 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/tailwind.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="fixed bg-blue-900 mx-auto w-full top-0 text-white items-center z-30">
+        <nav class="flex justify-between items-center w-full container mx-auto">
+            <h1 class="text-3xl uppercase font-bold p-4">Divcorn</h1>
+            <span class="md:hidden sm:inline-block p-2 bg-blue-800 rounded-lg cursor-pointer" id="menuBtn">
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </span>
+            <div class="justify-center items-center sm:hidden md:flex">
+                <ul class="flex space-x-4">
+                    <li class="p-2 md:hidden lg:block"><a href="#!" class="hover:underline uppercase hover:text-gray-200">Services</a></li>
+                    <li class="p-2 md:hidden lg:block"><a href="#!" class="hover:underline uppercase hover:text-gray-200">Products</a></li>
+                    <li class="p-2 md:hidden lg:block"><a href="#!" class="hover:underline uppercase hover:text-gray-200">Contact
+                            Us</a></li>
+                    <span class="md:hidden lg:block inline-block w-1 h-10 bg-white opacity-20"></span>
+                    <a class="inline-block flex items-center" href="tel:9354085897">
+                        <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                        <span id="phone-no">91-9205442860</span>
+                    </a>
+                </ul>
+                <div>
+                    <a class="inline-block m-4 px-4 py-2 rounded-lg  uppercase bg-green-600 hover:bg-green-700 text-gray-100 font-bold text-xs"
+                        href="#!">Get A Qoute</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- MOBILE NAVBAR SECTION -->
+    <div class="w-11/12 bg-blue-600 fixed top-20 rounded-lg left-1/2 transform -translate-x-1/2 z-40 hidden"
+        id="mobileNav">
+        <div class="relative pt-10 ">
+            <span id="closeBtn" class="absolute right-2 top-2 hover:bg-blue-800 cursor-pointer rounded-lg p-3">
+                <svg class="h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                </svg>
+            </span>
+        </div>
+        <ul class="w-full text-center text-white ">
+            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#!"
+                    class="uppercase hover:text-gray-200">Services</a></li>
+            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#!"
+                    class="uppercase hover:text-gray-200">Products</a></li>
+            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#!" class="uppercase hover:text-gray-200">Contact
+                    Us</a></li>
+            <a class="inline-block flex justify-center p-6 bg-green-600 hover:bg-green-700 items-center w-full"
+                href="tel:9354085897">
+                <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                <span id="phone-no" class="">91-9205442860</span>
+            </a>
+        </ul>
+    </div>
+
+    <div id="landing-div" class="rellax flex justify-center items-center" data-rellax-speed="-4" data-rellax-index="-1">
+        <h1 id="title" class="uppercase">Our Past Projects</h1>
+    </div>
+    <br><br><br><br>
+
+    <!-- SECTION 2.A -->
+    
+    <div class="mx-auto lg:m-32 md:m-10 sm:mx-4">
+        <div class="flex flex-col md:flex-row relative overflow-hidden rellax shadow-xl rounded-lg bg-white"  data-rellax-speed="4" data-rellax-index="11">
+            <div class="w-1/2 h-72 bg-cover repeat bg-center group-hover:text-white sm:w-full" style="background-image: url({% static 'images/aalok.png' %});" id="product-image" data-rellax-speed="1">
+            </div>
+            <div class="w-1/2 px-8 py-4 sm:w-full sm:py-8">
+                <h1 class="text-blue-900 uppercase mb-4" id="product-title">aalokpandeychemistry.com</h1>
+                <p class="text-lg text-gray-600 relative z-10">A website we made for the "Advance Plus Institute" run by aalokpandey to manage their institute.</p>
+                <a class="inline-block mt-8 bg-blue-800 px-6 py-3 uppercase transition duration-150 ease-in-out transform hover:scale-110 font-semibold text-white rounded-md" href="http://aalokpandeychemistry.com/">Visit Project</a>
+                <span id="crazy-text-right">NEW</span>
+            </div>
+        </div>
+        <br><br>
+        <div class="flex flex-col md:flex-row relative overflow-hidden rellax shadow-xl rounded-lg bg-white"  data-rellax-speed="4" data-rellax-index="11">
+            <div class="w-1/2 px-8 py-4 sm:w-full sm:py-8 sm:order-2 md:order-1">
+                <h1 class="text-blue-900 uppercase mb-4" id="product-title">UI/UX Design.</h1>
+                <p class="text-lg text-gray-600 relative z-10">Our UI/UX designer created beautiful UI/UX Designs for our clients. This design is created to show the true potential of our UI/UX specialist.</p>
+                <a class="inline-block mt-8 bg-blue-800 px-6 py-3 uppercase transition duration-150 ease-in-out transform hover:scale-110 font-semibold text-white rounded-md" href="#!">Visit Project</a>
+                <span id="crazy-text-right">NEW</span>
+            </div>
+            <div class="w-1/2 h-72 bg-cover repeat bg-center group-hover:text-white sm:w-full sm:order-1 md:order-2" style="background-image: url({% static 'images/dashboard.jpg'%});" id="product-image" data-rellax-speed="1">
+            </div>
+        </div>
+        <br><br>
+        <div class="flex flex-col md:flex-row relative overflow-hidden rellax shadow-xl rounded-lg bg-white"  data-rellax-speed="4" data-rellax-index="11">
+            <div class="w-1/2 h-72 bg-cover repeat bg-center group-hover:text-white sm:w-full" style="background-image: url({% static 'images/oobrol.jpg' %});" id="product-image" data-rellax-speed="1">
+            </div>
+            <div class="w-1/2 px-8 py-4 sm:w-full sm:py-8">
+                <h1 class="text-blue-900 uppercase mb-4" id="product-title">Oobrol</h1>
+                <p class="text-lg text-gray-600 relative z-10">Our UI/UX designer created the UI/Ux design for oobrol to provide their buisness an online store.</p>
+                <a class="inline-block mt-8 bg-blue-800 px-6 py-3 uppercase transition duration-150 ease-in-out transform hover:scale-110 font-semibold text-white rounded-md" href="#!">Visit Project</a>
+                <span id="crazy-text-right">NEW</span>
+            </div>
+        </div>
+        <br><br>
+        <div class="flex flex-col md:flex-row relative overflow-hidden rellax shadow-xl rounded-lg bg-white"  data-rellax-speed="4" data-rellax-index="11">
+            <div class="w-1/2 px-8 py-4 sm:w-full sm:py-8 sm:order-2 md:order-1">
+                <h1 class="text-blue-900 uppercase mb-4" id="product-title">Mobile App Design</h1>
+                <p class="text-lg text-gray-600 relative z-10">We've created the UX design for mobile application. To help the company get the idea on how the mobile application will look like.</p>
+                <a class="inline-block mt-8 bg-blue-800 px-6 py-3 uppercase transition duration-150 ease-in-out transform hover:scale-110 font-semibold text-white rounded-md" href="#!">Visit Project</a>
+                <span id="crazy-text-right">NEW</span>
+            </div>
+            <div class="w-1/2 h-72 bg-cover repeat bg-center group-hover:text-white sm:w-full sm:order-1 md:order-2" style="background-image: url({% static 'images/taskmanager.jpg' %});" id="product-image" data-rellax-speed="1">
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-blue-900 py-20">
+        <div id="pastWork" class="container mx-auto">
+            <h2 class="text-center font-semibold text-3xl text-white uppercase">Our Past Designs</h2>
+            <div class="flex items-center space-x-4 justify-center mb-4 opacity-50">
+                <span class="inline-block h-1 bg-gray-300 w-20"></span>
+                <span>
+                    <svg class="w-6 h-6 text-gray-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </span>
+                <span class="inline-block h-1 bg-gray-300 w-20"></span>
+            </div>
+            
+        </div>
+        <!-- Image Slider Section -->
+    
+        <div class="splide container mx-auto">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20210104_173650.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20201229_114350.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20210108_115131.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20210112_085301.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20210112_113036.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20210114_112052.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/20210116_092251.png' %}" alt="">
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/Fri_15_01_2021_06_13_53.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/Sat_16_01_2021_09_43_40.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/Sat_9_01_2021_14_58_29.png' %}" alt="">
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="h-64 px-2">
+                            <img class="h-full" src="{% static 'images/Works/Tue_12_01_2021_22_02_36.png' %}" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Footer Section -->
+    <div class="py-20" style="background: #040D21">
+        <!-- Main Footer Section -->
+        <div class="grid grid-gap-10 md:grid-cols-2 sm:grid-cols-1 gap-y-20 lg:grid-cols-4 container mx-auto text-white">
+            <div class="w-64 mx-auto">
+                <p class="font-semibold uppercase mb-4">Divcorn Consultancy</p>
+                <p>Agency specialising in Development, Design  <br> Marketing and Couslting</p>
+            </div>
+            <div class="w-64 mx-auto">
+                <p class="font-semibold uppercase mb-4">Contact</p>
+
+                <p>Write to us</p>
+                <a href="#!" class="inline-block py-1 mb-2 mb border-b-2 border-gray-800 "><i
+                        class="far fa-paper-plane text-xl mr-2"></i> hello@divcorn.com</a>
+
+                <p>Call to us</p>
+                <a href="#!" class="inline-block py-1 mb-2 mb border-b-2 border-gray-800"><i
+                        class="fas fa-mobile-alt text-xl mr-2"></i>+91 9205442860</a>
+            </div>
+            <div class="w-64 mx-auto">
+                <p class="font-semibold uppercase mb-4">Office</p>
+                <p>India 🇮🇳</p>
+                <p>New Delhi, Delhi</p>
+                <p>2N, Yamuna Vihar</p>
+            </div>
+            <div class="w-64 mx-auto">
+                <p class="font-semibold uppercase mb-4">Sitemap</p>
+                <p>About</p>
+                <p>Service</p>
+                <p>Case Studies</p>
+                <p>How we work</p>
+                <p><a href="#!" class="my-2 inline-block px-2 py-1 bg-green-700 hover:bg-green-800">Job Offers</a></p>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <!-- Copyright Section. -->
+    <div class="flex p-10 sm:flex-col md:flex-row justify-around items-center text-white" style="background: #020814">
+        <p>&copy; All Right Reserved.</p>
+        <p>Follow Us <a href="#!"><i class="fab fa-facebook text-2xl mx-2"></i><i
+                    class="fab fa-linkedin text-2xl mx-2"></i><i class="fab fa-instagram text-2xl mx-2"></i></a></p>
+        <p><a href="#!" class="hover:underline">Cookie & Privacy Policy</a></p>
+    </div>
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        #landing-div{
+            background-image: url({% static 'images/hero.svg' %});
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 500px;
+            position: relative;
+        }
+        #landing-div::after{
+            content: '';
+            background: linear-gradient(#000000, #020510);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 90%;
+        }
+        #product-image{
+            /* clip-path: polygon(0% 0%, 0% 100%, 90% 100%, 100% 0%); */
+        }
+        #product-title{
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+        }        
+        #title{
+            font-family: 'Oswald', sans-serif;
+            font-size: 5rem;
+            color: white;
+            z-index: 2;
+            text-align: center;
+            font-weight: bold;
+        }
+        #crazy-text-right{
+            font-family: 'Oswald', sans-serif;
+            font-size: 8rem;
+            font-weight: bolder;
+            display: inline-block;
+            transform: rotate(-90deg) translateX(50%) translateY(50%);
+            /* color: black; */
+            position: absolute;
+            right: 0;
+            top: 50%;
+            color: rgba(0, 0, 0, 0.178);
+            /* top: -50%; */
+            /* transform: ; */
+        }
+        #crazy-text-left{
+            font-family: 'Oswald', sans-serif;
+            font-size: 8rem;
+            font-weight: bolder;
+            display: inline-block;
+            transform: rotate(90deg) translateX(-50%) translateY(50%);
+            /* color: black; */
+            position: absolute;
+            left: 0;
+            top: 50%;
+            /* opacity: 90%; */
+            /* top: -50%; */
+            /* transform: ; */
+        }
+    </style>
+
+    <script src="{% static 'js/rellax.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script>
+        var rellax = new Rellax('.rellax');
+        new Splide('.splide', {
+            type: 'loop',
+            autoWidth: true,
+            perMove: 1,
+        }).mount();
+    </script>
+    <script>
+        var mobileNav = document.querySelector("#mobileNav");
+        var closeBtn = document.querySelector("#closeBtn");
+        var menuBtn = document.querySelector("#menuBtn");
+        var contactBtn = document.querySelector("#contactBtn");
+        var modal = document.querySelector("#modal");
+        var modalCloseBtn = document.querySelector("#modalCloseBtn");
+
+        modalCloseBtn.addEventListener("click", ()=>{
+            if (modal.classList.contains("hidden")){
+                modal.classList.remove("hidden");
+            } else{
+                modal.classList.add("hidden");
+            }
+        });
+
+        document.querySelector("#contactForm").addEventListener("submit", (event)=>{
+            event.preventDefault()
+            if (modal.classList.contains("hidden")){
+                modal.classList.remove("hidden");
+            }
+        });
+
+        closeBtn.addEventListener("click", ()=>{
+            if (mobileNav.classList.contains("hidden")){
+                mobileNav.classList.remove("hidden");
+            } else{
+                mobileNav.classList.add("hidden");
+            }
+        });
+        menuBtn.addEventListener("click", ()=>{
+            if (mobileNav.classList.contains("hidden")){
+                mobileNav.classList.remove("hidden");
+            } else{
+                mobileNav.classList.add("hidden");
+            }
+        });
+    </script>
+</body>
+
+</html>

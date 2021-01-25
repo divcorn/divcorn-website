@@ -27,9 +27,9 @@
                 <ul class="flex space-x-4 ">
                     <li class="p-2"><a href="#!"
                             class="hover:underline uppercase hover:text-gray-200">Services</a></li>
-                    <li class="p-2"><a href="#!"
-                            class="hover:underline uppercase hover:text-gray-200">Products</a></li>
-                    <li class="p-2"><a href="#!" class="hover:underline uppercase hover:text-gray-200">Contact
+                    <li class="p-2"><a href="{% url 'portfolio'%}"
+                            class="hover:underline uppercase hover:text-gray-200">Portfolio</a></li>
+                    <li class="p-2"><a href="#contactForm" class="hover:underline uppercase hover:text-gray-200">Contact
                             Us</a></li>
                     <span class="inline-block w-1 h-10 bg-white opacity-20"></span>
                     <a class="inline-block flex items-center" href="tel:9354085897">
@@ -58,10 +58,10 @@
             </span>
         </div>
         <ul class="w-full text-center text-white ">
-            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#!"
+            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#servicesSection"
                     class="uppercase hover:text-gray-200">Services</a></li>
-            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#!"
-                class="uppercase hover:text-gray-200">Products</a></li>
+            <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="{% url 'portfolio'%}"
+                class="uppercase hover:text-gray-200">Portfolio</a></li>
             <li class="p-4 hover:bg-blue-700 cursor-pointer"><a href="#!" class="uppercase hover:text-gray-200">Contact Us</a></li>
             <a class="inline-block flex justify-center p-6 bg-green-600 hover:bg-green-700 items-center w-full" href="tel:9354085897">
                 <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -101,7 +101,7 @@
                 <h1 id="main-btn" class="main-btn text-center mt-3 px-4">We help innovators build worthwhile products.</h1>
 
                 <div class="flex justify-center mt-6">
-                    <a href="#!" class="ml-2 inline-block px-8 py-4 pr-14 my-4 bg-blue-900 rounded-sm text-xs focus:ring-4 focus:ring-blue-800 focus:ring-opacity-50 uppercase font-bold relative">
+                    <a href="#pastWork" class="ml-2 inline-block px-8 py-4 pr-14 my-4 bg-blue-900 rounded-sm text-xs focus:ring-4 focus:ring-blue-800 focus:ring-opacity-50 uppercase font-bold relative">
                         <span id="text-xs">About Us</span>
                         <span class="absolute right-3 top-1/2 transform -translate-y-1/2">
                             <svg class="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -111,7 +111,7 @@
                         </span>
                     </a>
 
-                    <a href="#!" class="ml-2 inline-block px-8 py-4 pr-14 my-4 bg-blue-600 rounded-sm text-xs focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 uppercase font-bold relative">
+                    <a href="#contactForm" class="ml-2 inline-block px-8 py-4 pr-14 my-4 bg-blue-600 rounded-sm text-xs focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 uppercase font-bold relative">
                         <span id="text-xs">Contact Us</span>
                         <span class="absolute right-3 top-1/2 transform -translate-y-1/2">
                             <svg class="h-8 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -231,34 +231,10 @@
 
     <!-- HEADER COMPLETED -->
     
-    <!-- Case Study -->
-    <!-- <div class="mx-auto container mt-32">
-        <h2 class="font-semibold uppercase">Our Works</h2>
-
-        <div class="flex justify-between mb-2 items-center mt-2 sm:mx-6">
-            <span>
-                <h3 class="md:text-3xl sm:hidden">Case studies are <br> conducted by our team.</h3>
-            </span>
-            <span class="relative inline-block md:pr-8  hover:underline cursor-pointer">
-                <span class="uppercase text-xs text-gray-700">Explore All projects</span>
-                <span class="absolute md:right-3  top-1/2 transform -translate-y-1/2">
-                    <svg class="h-4 stroke-current text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </span>
-            </span>
-        </div> -->
-
-        <!-- Image Goes Here ... -->
-        <!-- <div class="bg-gray-800 w-full rounded-md bg-cover" id="cover-img"
-            style="background-image: url(../images/img-proj.png); height: 500px;"></div>
-    </div> -->
     <br><br>
     <!-- OUR PAST WORKS SECTION -->
 
-    <div class="container mx-auto">
+    <div id="pastWork" class="container mx-auto">
         <h2 class="text-center font-semibold text-2xl text-gray-600">Past Works</h2>
         <div class="flex items-center space-x-4 justify-center mb-4 opacity-50">
             <span class="inline-block h-1 bg-gray-300 w-20"></span>
@@ -385,7 +361,7 @@
     </div>
 
     <!-- Services Section Goes Here... -->
-    <div class="mx-auto container grid gap-4 gap-y-20 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2">
+    <div id="servicesSection" class="mx-auto container grid gap-4 gap-y-20 lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2">
         <div class=" bg-white shadow-lg rounded-xl mx-auto flex p-10 justify-center group hover:shadow-xl hover:bg-blue-600 hover:cursor-pointer">
             <div class="md:w-64 sm:w-11/12 relative z-20">
                 <div class="bg-cover w-32 mx-auto mb-5">
@@ -458,7 +434,7 @@
 
     </div>
     
-
+    
 
     <br><br><br><br>
 
@@ -470,52 +446,51 @@
 
             <!-- NOTE: Slides are here... -->
             <ul class="splide__list">
-                <li class="splide__slide">
+                <li class="splide__slide inline-block">
                     <!-- First Slide. -->
-                    <div class="flex sm:flex-col md:flex-row justify-center items-center bg-blue-700 rounded-md md:p-20 sm:p-10 md:mx-5 sm:mx-1"
+                    <div class="flex sm:flex-col my-10 w-96 justify-center items-center bg-blue-700 rounded-md sm:p-4 sm:mx-1"
                         style="background: linear-gradient(#030303, #001252);">
                         <!-- Image & Name -->
-                        <div class="md:w-1/4 sm:w-full flex flex-col items-center justify-center">
-                            <div class="bg-cover sm:w-28 md:40">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="bg-cover sm:w-28">
                                 <img class="rounded-full" src="{% static 'images/client_mukesh.png' %}" alt="">
                             </div>
                             <h2 class="text-4xl text-gray-200 mt-4">4.9</h2>
                             <div class="flex">
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="w-1 h-64 bg-blue-900 mx-10 sm:hidden md:block rounded-lg" style="background: #001252;"></div>
-                        <div class="md:w-1/4 sm:pt-4 text-center">
-                            <h3 class="text-white md:text-3xl sm:text-md">They prefectly met my
+                        <div class="sm:p-4 text-center">
+                            <h3 class="text-white sm:text-md">They prefectly met my
                                 expectations - working
                                 with these felt like an
                                 extension of my in-house
                                 team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-2 sm:text-xs">- Mukesh Dutt, Haryana Gov.</p>
+                            <p class="text-gray-400 md:mt-5 sm:mt-2 sm:text-xs">- Mukesh Dutt, Haryana Gov.</p>
                         </div>
                     </div>
                 </li>
@@ -523,152 +498,146 @@
                 <!-- Bhisham Sharma, Congress -->
                 <!-- Aalok Pande, CEO at Advance Academic -->
                 
+                
                 <li class="splide__slide">
                     <!-- First Slide. -->
-                    <div class="flex sm:flex-col md:flex-row justify-center items-center bg-blue-700 rounded-md md:p-20 sm:p-10 md:mx-5 sm:mx-1"
+                    <div class="flex sm:flex-col my-10 w-96 justify-center items-center bg-blue-700 rounded-md sm:p-4 sm:mx-1"
                         style="background: linear-gradient(#030303, #001252);">
                         <!-- Image & Name -->
-                        <div class="md:w-1/4 sm:w-full flex flex-col items-center justify-center">
-                            <div class="bg-cover sm:w-28 md:40">
-                                <img class="rounded-full" src="{% static 'images/client_sridutt.png' %}" alt="">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="bg-cover sm:w-28">
+                                <img class="rounded-full" src="{% static 'images/client_alok.png' %}" alt="">
                             </div>
-                            <h2 class="text-4xl text-gray-200 mt-4">4.9</h2>
+                            <h2 class="text-4xl text-gray-200 mt-4">5</h2>
                             <div class="flex">
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="w-1 h-64 bg-blue-900 mx-10 sm:hidden md:block rounded-lg" style="background: #001252;"></div>
-                        <div class="md:w-1/4 sm:pt-4 text-center">
-                            <h3 class="text-white md:text-3xl sm:text-md">They prefectly met my
-                                expectations - working
-                                with these felt like an
-                                extension of my in-house
-                                team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-2 sm:text-xs">- Sridutt Sharma, Aam Aadmi Party</p>
+                        <div class="sm:p-4 text-center">
+                            <h3 class="text-white sm:text-md">They really helped me to take my buisness online which allows me to expand it exponentially.</h3>
+                            <p class="text-gray-400 md:mt-5 sm:mt-2 sm:text-xs">- Aalok pandey, CEO at Advance Academy.</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="splide__slide">
                     <!-- First Slide. -->
-                    <div class="flex sm:flex-col md:flex-row justify-center items-center bg-blue-700 rounded-md md:p-20 sm:p-10 md:mx-5 sm:mx-1"
+                    <div class="flex sm:flex-col my-10 w-96 justify-center items-center bg-blue-700 rounded-md sm:p-4 sm:mx-1"
                         style="background: linear-gradient(#030303, #001252);">
                         <!-- Image & Name -->
-                        <div class="md:w-1/4 sm:w-full flex flex-col items-center justify-center">
-                            <div class="bg-cover sm:w-28 md:40">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="bg-cover sm:w-28">
                                 <img class="rounded-full" src="{% static 'images/client_bhisham.png' %}" alt="">
                             </div>
                             <h2 class="text-4xl text-gray-200 mt-4">4.9</h2>
                             <div class="flex">
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="w-1 h-64 bg-blue-900 mx-10 sm:hidden md:block rounded-lg" style="background: #001252;"></div>
-                        <div class="md:w-1/4 sm:pt-4 text-center">
-                            <h3 class="text-white md:text-3xl sm:text-md">They prefectly met my
+                        <div class="sm:p-4 text-center">
+                            <h3 class="text-white sm:text-md">They prefectly met my
                                 expectations - working
                                 with these felt like an
                                 extension of my in-house
                                 team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-2 sm:text-xs">- Bhisham Sharma, Congress</p>
+                            <p class="text-gray-400 md:mt-5 sm:mt-2 sm:text-xs">- Bhisma Sharma.</p>
                         </div>
                     </div>
                 </li>
 
                 <li class="splide__slide">
                     <!-- First Slide. -->
-                    <div class="flex sm:flex-col md:flex-row justify-center items-center bg-blue-700 rounded-md md:p-20 sm:p-10 md:mx-5 sm:mx-1"
+                    <div class="flex sm:flex-col my-10 w-96 justify-center items-center bg-blue-700 rounded-md sm:p-4 sm:mx-1"
                         style="background: linear-gradient(#030303, #001252);">
                         <!-- Image & Name -->
-                        <div class="md:w-1/4 sm:w-full flex flex-col items-center justify-center">
-                            <div class="bg-cover sm:w-28 md:40">
-                                <img class="rounded-full" src="{% static 'images/client_alok.png' %}" alt="">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="bg-cover sm:w-28">
+                                <img class="rounded-full" src="{% static 'images/client_sridutt.png' %}" alt="">
                             </div>
                             <h2 class="text-4xl text-gray-200 mt-4">4.9</h2>
                             <div class="flex">
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
-                                <svg class="fill-current text-yellow-500 md:w-10 md:h-10 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
+                                <svg class="fill-current text-yellow-500 sm:h-5 sm:w-5" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20" fill="currentColor">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
                             </div>
                         </div>
-                        <div class="w-1 h-64 bg-blue-900 mx-10 sm:hidden md:block rounded-lg" style="background: #001252;"></div>
-                        <div class="md:w-1/4 sm:pt-4 text-center">
-                            <h3 class="text-white md:text-3xl sm:text-md">They prefectly met my
+                        <div class="sm:p-4 text-center">
+                            <h3 class="text-white sm:text-md">They prefectly met my
                                 expectations - working
                                 with these felt like an
                                 extension of my in-house
                                 team.</h3>
-                            <p class="text-gray-400 md:mt-20 sm:mt-2 sm:text-xs">- Aalok pande, CEO at Advance Academic</p>
+                            <p class="text-gray-400 md:mt-5 sm:mt-2 sm:text-xs">- Sridutt Sharma, Aam Aadmi Party.</p>
                         </div>
                     </div>
                 </li>
@@ -681,7 +650,7 @@
 
     <!-- Contact Form Goes Here... -->
     <div class="mx-auto bg-white shadow-2xl py-10 pt-20 relative -mb-32 md:w-3/4">
-        <form action="" method="post" class="md:mx-20 sm:mx-10 bg-white lg:mx-32">
+        <form action="" method="post" class="md:mx-20 sm:mx-10 bg-white lg:mx-32" id="contactForm">
             <div class="mb-10">
                 <!-- Wierdo Content Goes Here. -->
                 <p class="uppercase text-gray-600">Say Hello 👋</p>
@@ -690,22 +659,22 @@
             </div>
             <span class="block my-4">
                 <input class="bg-gray-100 p-2 rounded-sm w-full text-gray-500 font-semibold" type="text" name="name"
-                    id="#name" placeholder="Full Name">
+                    id="#name" placeholder="Full Name" required>
             </span>
             <span class="block my-4">
                 <input class="bg-gray-100 p-2 rounded-sm w-full text-gray-500 font-semibold" type="phone" name="phone"
-                    id="#phone" placeholder="Phone">
+                    id="#phone" placeholder="Phone" required>
             </span>
             <span class="block my-4">
                 <input class="bg-gray-100 p-2 rounded-sm w-full text-gray-500 font-semibold" type="email" name="email"
-                    id="#email" placeholder="Email">
+                    id="#email" placeholder="Email" required>
             </span>
             <span class="block my-4">
                 <textarea class="bg-gray-100 p-2 rounded-sm w-full text-gray-500 font-semibold" name="message"
-                    id="#message" placeholder="Message"></textarea>
+                    id="#message" placeholder="Message" required></textarea>
             </span>
             <span class="block">
-                <button type="submit"
+                <button type="submit" id="contactBtn"
                     class="shadow-xl inline-block px-4 py-2 pr-14 my-4 bg-blue-600 uppercase font-semibold relative">
                     <span class="text-white text-xs">Let's Talk</span>
                     <span class="absolute right-3 top-1/2 transform -translate-y-2/3 text-white">
@@ -765,14 +734,26 @@
         <p><a href="#!" class="hover:underline">Cookie & Privacy Policy</a></p>
     </div>
 
+    <div id="modal" class="p-4 hidden fixed sm:w-3/4 z-40 rounded-lg bg-blue-500 bottom-2 left-1/2 transform -translate-x-1/2 ">
+        <div class="relative">
+            <span id="modalCloseBtn" class="hover:bg-blue-800 cursor-pointer rounded-lg p-3">
+                <svg class="h-6 w-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+            </span>
+        </div>
+        <div class="">
+            <h1 class="text-xl text-center text-blue-900 mx-5 mt-10">
+                Thanks, We'll reach out to you soon.
+            </h1>
+        </div>
+        
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
         new Splide('#splide', {
             type: 'loop',
-            padding: {
-                right: '1rem',
-                left: '1rem',
-            },
+            autoWidth: true,
         }).mount();
         new Splide('#tech-stack', {
             type: 'loop', 
@@ -784,6 +765,25 @@
         var mobileNav = document.querySelector("#mobileNav");
         var closeBtn = document.querySelector("#closeBtn");
         var menuBtn = document.querySelector("#menuBtn");
+        var contactBtn = document.querySelector("#contactBtn");
+        var modal = document.querySelector("#modal");
+        var modalCloseBtn = document.querySelector("#modalCloseBtn");
+
+        modalCloseBtn.addEventListener("click", ()=>{
+            if (modal.classList.contains("hidden")){
+                modal.classList.remove("hidden");
+            } else{
+                modal.classList.add("hidden");
+            }
+        });
+
+        document.querySelector("#contactForm").addEventListener("submit", (event)=>{
+            event.preventDefault()
+            if (modal.classList.contains("hidden")){
+                modal.classList.remove("hidden");
+            }
+        });
+
         closeBtn.addEventListener("click", ()=>{
             if (mobileNav.classList.contains("hidden")){
                 mobileNav.classList.remove("hidden");
